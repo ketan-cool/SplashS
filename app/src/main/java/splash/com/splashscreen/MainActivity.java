@@ -38,11 +38,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        LoginButton();
-    }
 
-
-    public void LoginButton() {
         username = (EditText) findViewById(R.id.txtuname);
         password = (EditText) findViewById(R.id.txtpass);
         login_button = (Button) findViewById(R.id.blogin);
@@ -53,19 +49,24 @@ public class MainActivity extends AppCompatActivity {
                                             public void onClick(View v) {
 
                                                 if (username.getText().toString().equals("ketancool") && password.getText().toString().equals("ketancool")) {
-                                                    txt.setText(R.string.app_name);
+                                                    Toast.makeText(MainActivity.this,"Welcome developer",
+                                                            Toast.LENGTH_SHORT).show();
 
-                                                    //startActivity(new Intent(MainActivity.this, popup.class));
                                                 } else {
-                                                    txt.setText(R.string.action_settings);
-
+                                                    Toast.makeText(MainActivity.this,"Fuckoff User",
+                                                            Toast.LENGTH_SHORT).show();
                                                 }
-                                                startActivity(new Intent(MainActivity.this, popup.class));
 
                                             }
                                         }
         );
 
 
+
+        //LoginButton();
     }
+
+
+    public void LoginButton() {
+            }
 }

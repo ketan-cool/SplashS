@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:id="@+id/ptext"
-        android:text="ketan"
         android:textSize="30dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
