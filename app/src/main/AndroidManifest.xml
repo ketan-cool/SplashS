@@ -27,13 +27,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".popup"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-
-
+        <activity
+            android:name=".popup"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity android:name=".Reclyclerview"></activity>
     </application>
 
 </manifest>

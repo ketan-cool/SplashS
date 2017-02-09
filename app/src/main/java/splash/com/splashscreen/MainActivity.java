@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                                                 if (username.getText().toString().equals("ketancool") && password.getText().toString().equals("ketancool")) {
                                                     Toast.makeText(MainActivity.this,"Welcome developer",
                                                             Toast.LENGTH_SHORT).show();
+                                                    startActivity(new Intent(MainActivity.this,Reclyclerview.class));
 
                                                 } else {
                                                     Toast.makeText(MainActivity.this,"Fuckoff User",
